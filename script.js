@@ -340,7 +340,7 @@ const materials = [
     
             card.innerHTML = `
                 <div class="card">
-                    <img src="material.image" alt="{material.name}" class="card-img-top">
+                    <img src="${material.name}" alt="${material.name}" class="card-img-top">
                     <div class="card-body">
                         <p class="card-text">${material.name}</p>
                     </div>
