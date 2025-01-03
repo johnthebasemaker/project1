@@ -1,0 +1,116 @@
+/* Navbar Styles */
+nav {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo */
+h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Navbar Links */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    color: gray;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 5px 10px;
+}
+
+li:hover {
+    color: white;
+}
+
+/* Hamburger Menu (Initially Hidden) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/* Input Styles */
+input {
+    width: 60%;
+    padding: 15px;
+}
+
+.Searchbar {
+    padding: 25px;
+    text-align: center;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Search Bar */
+#search-bar {
+    margin: 20px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+/* Gallery Styles */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    /* On small screens, make the navbar vertical */
+    ul {
+        display: none; /* Hide navbar links by default */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+
+    /* Show the hamburger icon on small screens */
+    .hamburger {
+        display: block;
+    }
+
+    /* When the "active" class is added, show the navbar links */
+    ul.active {
+        display: flex;
+    }
+}

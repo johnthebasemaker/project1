@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Visual Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="Header">
+        <nav>
+            <div class="logo">
+                <h1>Material Visual Gallery</h1>
+            </div>
+            <!-- Hamburger Menu Icon (Initially Hidden) -->
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
+            <!-- Navbar Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Daily Log</a></li>
+                <li><a href="#">Receipt Log</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <h1>Material Visual Gallery</h1>
+    <input type="text" id="search-bar" placeholder="Search material by name or image ID...">
+    <div id="gallery"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
